@@ -1,0 +1,3 @@
+C:/Users/czx/Desktop/GKD-Software-2025-Test/build/CMakeFiles/test.dir
+C:/Users/czx/Desktop/GKD-Software-2025-Test/build/CMakeFiles/edit_cache.dir
+C:/Users/czx/Desktop/GKD-Software-2025-Test/build/CMakeFiles/rebuild_cache.dir

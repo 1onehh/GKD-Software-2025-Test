@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.embeddedhtml": "html",
+        "stdexcept": "cpp",
+        "iosfwd": "cpp"
+    },
+    "cmake.sourceDirectory": "C:/Users/czx/Desktop/GKD-Software-2025-Test/src"
+}
