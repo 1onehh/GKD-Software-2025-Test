@@ -128,29 +128,29 @@ test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
-part2.obj: part2.cpp.obj
-.PHONY : part2.obj
+part2moban.obj: part2moban.cpp.obj
+.PHONY : part2moban.obj
 
 # target to build an object file
-part2.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/part2.cpp.obj
-.PHONY : part2.cpp.obj
+part2moban.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/part2moban.cpp.obj
+.PHONY : part2moban.cpp.obj
 
-part2.i: part2.cpp.i
-.PHONY : part2.i
+part2moban.i: part2moban.cpp.i
+.PHONY : part2moban.i
 
 # target to preprocess a source file
-part2.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/part2.cpp.i
-.PHONY : part2.cpp.i
+part2moban.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/part2moban.cpp.i
+.PHONY : part2moban.cpp.i
 
-part2.s: part2.cpp.s
-.PHONY : part2.s
+part2moban.s: part2moban.cpp.s
+.PHONY : part2moban.s
 
 # target to generate assembly for a file
-part2.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/part2.cpp.s
-.PHONY : part2.cpp.s
+part2moban.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/part2moban.cpp.s
+.PHONY : part2moban.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... test
-	@echo ... part2.obj
-	@echo ... part2.i
-	@echo ... part2.s
+	@echo ... part2moban.obj
+	@echo ... part2moban.i
+	@echo ... part2moban.s
 .PHONY : help
 
 

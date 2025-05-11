@@ -14,7 +14,6 @@ public:
     Matrix(int r, int c) : rows(r), cols(c) {
         data = vector<vector<float>>(r, vector<float>(c, 0.0f));
     }
-
     Matrix(const vector<vector<float>>& d) {
         data = d;
         rows = d.size();
@@ -23,7 +22,7 @@ public:
 
     static Matrix multiply(const Matrix& A, const Matrix& B) {
         if (A.cols != B.rows)
-            throw std::invalid_argument("dimensions do not match");
+            throw invalid_argument("dimensions do not match");
         Matrix result(A.rows, B.cols);
         for (int i = 0; i < A.rows; ++i) {
             for (int j = 0; j < B.cols; ++j) {
@@ -37,7 +36,7 @@ public:
 
     static Matrix add(const Matrix& A, const Matrix& B) {
         if (A.rows != B.rows || A.cols != B.cols)
-            throw std::invalid_argument("dimensions do not match");
+            throw invalid_argument("dimensions do not match");
         Matrix result(A.rows, A.cols);
         for (int i = 0; i < A.rows; ++i) {
             for (int j = 0; j < A.cols; ++j) {
@@ -57,7 +56,7 @@ Matrix relu(const Matrix& input) {
         }
     }
     return result;
-}
+};
 
 // SoftMax 
 vector<float> softmax(const vector<float>& input) {
@@ -70,14 +69,13 @@ vector<float> softmax(const vector<float>& input) {
         output[i] = exp(input[i]) / sum;
     }
     return output;
-}
+};
 
-class Model {
+class Model{
 private:
     Matrix weight1, bias1, weight2, bias2;//784 * 500 1 * 500 500 * 10 1 * 10
 public:
-    Model(const Matrix& w1, const Matrix& b1, const Matrix& w2, const Matrix& b2)
-        : weight1(w1), bias1(b1), weight2(w2), bias2(b2) {}
+    Model(const Matrix& w1, const Matrix& b1, const Matrix& w2, const Matrix& b2): weight1(w1), bias1(b1), weight2(w2), bias2(b2) {}
     vector<float> forward(const Matrix& input) {
         Matrix z1 = Matrix::add(Matrix::multiply(input, weight1), bias1);
         Matrix a1 = relu(z1);

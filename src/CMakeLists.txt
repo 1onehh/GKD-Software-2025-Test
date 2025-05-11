@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 17)
 
 include_directories(src)
 
-add_executable(test part2.cpp)
+add_executable(test part2moban.cpp)

@@ -68,29 +68,29 @@ include CMakeFiles/test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test.dir/flags.make
 
-CMakeFiles/test.dir/part2.cpp.obj: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/part2.cpp.obj: CMakeFiles/test.dir/includes_CXX.rsp
-CMakeFiles/test.dir/part2.cpp.obj: C:/Users/czx/Desktop/GKD-Software-2025-Test/src/part2.cpp
-CMakeFiles/test.dir/part2.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\czx\Desktop\GKD-Software-2025-Test\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/part2.cpp.obj"
-	C:\PROGRA~1\VSCODE~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/part2.cpp.obj -MF CMakeFiles\test.dir\part2.cpp.obj.d -o CMakeFiles\test.dir\part2.cpp.obj -c C:\Users\czx\Desktop\GKD-Software-2025-Test\src\part2.cpp
+CMakeFiles/test.dir/part2moban.cpp.obj: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/part2moban.cpp.obj: CMakeFiles/test.dir/includes_CXX.rsp
+CMakeFiles/test.dir/part2moban.cpp.obj: C:/Users/czx/Desktop/GKD-Software-2025-Test/src/part2moban.cpp
+CMakeFiles/test.dir/part2moban.cpp.obj: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\czx\Desktop\GKD-Software-2025-Test\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/test.dir/part2moban.cpp.obj"
+	C:\PROGRA~1\VSCODE~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/part2moban.cpp.obj -MF CMakeFiles\test.dir\part2moban.cpp.obj.d -o CMakeFiles\test.dir\part2moban.cpp.obj -c C:\Users\czx\Desktop\GKD-Software-2025-Test\src\part2moban.cpp
 
-CMakeFiles/test.dir/part2.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/part2.cpp.i"
-	C:\PROGRA~1\VSCODE~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\czx\Desktop\GKD-Software-2025-Test\src\part2.cpp > CMakeFiles\test.dir\part2.cpp.i
+CMakeFiles/test.dir/part2moban.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/part2moban.cpp.i"
+	C:\PROGRA~1\VSCODE~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\czx\Desktop\GKD-Software-2025-Test\src\part2moban.cpp > CMakeFiles\test.dir\part2moban.cpp.i
 
-CMakeFiles/test.dir/part2.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/part2.cpp.s"
-	C:\PROGRA~1\VSCODE~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\czx\Desktop\GKD-Software-2025-Test\src\part2.cpp -o CMakeFiles\test.dir\part2.cpp.s
+CMakeFiles/test.dir/part2moban.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/part2moban.cpp.s"
+	C:\PROGRA~1\VSCODE~1\MinGW\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\czx\Desktop\GKD-Software-2025-Test\src\part2moban.cpp -o CMakeFiles\test.dir\part2moban.cpp.s
 
 # Object files for target test
 test_OBJECTS = \
-"CMakeFiles/test.dir/part2.cpp.obj"
+"CMakeFiles/test.dir/part2moban.cpp.obj"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
-test.exe: CMakeFiles/test.dir/part2.cpp.obj
+test.exe: CMakeFiles/test.dir/part2moban.cpp.obj
 test.exe: CMakeFiles/test.dir/build.make
 test.exe: CMakeFiles/test.dir/linklibs.rsp
 test.exe: CMakeFiles/test.dir/objects1.rsp

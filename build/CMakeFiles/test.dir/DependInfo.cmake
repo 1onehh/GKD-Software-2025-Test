@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/czx/Desktop/GKD-Software-2025-Test/src/part2.cpp" "CMakeFiles/test.dir/part2.cpp.obj" "gcc" "CMakeFiles/test.dir/part2.cpp.obj.d"
+  "C:/Users/czx/Desktop/GKD-Software-2025-Test/src/part2moban.cpp" "CMakeFiles/test.dir/part2moban.cpp.obj" "gcc" "CMakeFiles/test.dir/part2moban.cpp.obj.d"
   )
 
 # Targets to which this target links.
