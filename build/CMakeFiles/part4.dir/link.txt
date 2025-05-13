@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\part4.dir/objects.a
+C:\PROGRA~1\VSCODE~1\MinGW\bin\ar.exe qc CMakeFiles\part4.dir/objects.a @CMakeFiles\part4.dir\objects1.rsp
+C:\PROGRA~1\VSCODE~1\MinGW\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\part4.dir/objects.a -Wl,--no-whole-archive -o part4.exe -Wl,--out-implib,libpart4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\part4.dir\linklibs.rsp

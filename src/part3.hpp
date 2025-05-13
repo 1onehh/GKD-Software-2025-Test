@@ -1,3 +1,4 @@
+#pragma once
 #include <vector>
 #include <iostream>
 #include <stdexcept>
@@ -12,7 +13,7 @@ public:
     vector<vector<T>> data;
     int rows, cols;
     Matrix(int r, int c) : rows(r), cols(c) {
-        data = vector<vector<T>>(r, vector<T>(c, 0.0f));
+        data = vector<vector<T>>(r, vector<T>(c, (T)0.0));
     }
     Matrix(const vector<vector<T>>& d) {
         data = d;
@@ -82,7 +83,7 @@ class ModelBase{
 template<typename T>
 class Model :public ModelBase<T>{
 private:
-    Matrix<T> weight1, bias1, weight2, bias2;//784 * 500 1 * 500 500 * 10 1 * 10
+    Matrix<T> weight1, bias1, weight2, bias2;//784 * 500  1 * 500  500 * 10  1 * 10
 public:
     Model(const Matrix<T>& w1, const Matrix<T>& b1, const Matrix<T>& w2, const Matrix<T>& b2): weight1(w1), bias1(b1), weight2(w2), bias2(b2) {}
     vector<T> forward(const Matrix<T>& input) override{

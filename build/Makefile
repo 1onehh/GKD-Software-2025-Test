@@ -116,41 +116,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test
+# Target rules for targets named part4
 
 # Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test
-.PHONY : test
+part4: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 part4
+.PHONY : part4
 
 # fast build rule for target.
-test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
+part4/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part4.dir\build.make CMakeFiles/part4.dir/build
+.PHONY : part4/fast
 
-part2moban.obj: part2moban.cpp.obj
-.PHONY : part2moban.obj
+part4.obj: part4.cpp.obj
+.PHONY : part4.obj
 
 # target to build an object file
-part2moban.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/part2moban.cpp.obj
-.PHONY : part2moban.cpp.obj
+part4.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part4.dir\build.make CMakeFiles/part4.dir/part4.cpp.obj
+.PHONY : part4.cpp.obj
 
-part2moban.i: part2moban.cpp.i
-.PHONY : part2moban.i
+part4.i: part4.cpp.i
+.PHONY : part4.i
 
 # target to preprocess a source file
-part2moban.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/part2moban.cpp.i
-.PHONY : part2moban.cpp.i
+part4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part4.dir\build.make CMakeFiles/part4.dir/part4.cpp.i
+.PHONY : part4.cpp.i
 
-part2moban.s: part2moban.cpp.s
-.PHONY : part2moban.s
+part4.s: part4.cpp.s
+.PHONY : part4.s
 
 # target to generate assembly for a file
-part2moban.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/part2moban.cpp.s
-.PHONY : part2moban.cpp.s
+part4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part4.dir\build.make CMakeFiles/part4.dir/part4.cpp.s
+.PHONY : part4.cpp.s
 
 # Help Target
 help:
@@ -160,10 +160,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... test
-	@echo ... part2moban.obj
-	@echo ... part2moban.i
-	@echo ... part2moban.s
+	@echo ... part4
+	@echo ... part4.obj
+	@echo ... part4.i
+	@echo ... part4.s
 .PHONY : help
 
 
