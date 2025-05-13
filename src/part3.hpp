@@ -77,6 +77,7 @@ vector<T> softmax(const vector<T>& input) {
 
 template<typename T>
 class ModelBase{
+public:
      virtual vector<T> forward(const Matrix<T>& input) = 0;
 };
 

@@ -81,8 +81,5 @@ public:
         Matrix a1 = relu(z1);
         Matrix z2 = Matrix::add(Matrix::multiply(a1, weight2), bias2);
         return softmax(z2.data[0]);
-    }
-
-
-    //多线程优化后时间：0.002675s 不优化：0.005875 seconds
+    }    
 };
