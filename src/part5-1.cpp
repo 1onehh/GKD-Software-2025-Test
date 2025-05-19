@@ -5,9 +5,9 @@
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #include <unistd.h>
-#include "part3.hpp"  // 假设你的 Model 和 Matrix 类在这里
-#include "part2moban.hpp" // loadModel 定义在这里
-//服务端接口
+#include "part3.hpp"  
+#include "part2moban.hpp" 
+//服务端接口 socket
 using namespace std;
 
 const int PORT = 12345;
