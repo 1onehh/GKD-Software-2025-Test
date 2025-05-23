@@ -72,7 +72,12 @@
         "thread": "cpp",
         "typeinfo": "cpp",
         "valarray": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "cfenv": "cpp",
+        "complex": "cpp",
+        "future": "cpp",
+        "cinttypes": "cpp",
+        "typeindex": "cpp"
     },
     "cmake.sourceDirectory": "C:/Users/czx/Desktop/GKD-Software-2025-Test/src"
 }

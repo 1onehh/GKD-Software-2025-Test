@@ -116,41 +116,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named part4
+# Target rules for targets named part6
 
 # Build rule for target.
-part4: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 part4
-.PHONY : part4
+part6: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 part6
+.PHONY : part6
 
 # fast build rule for target.
-part4/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\part4.dir\build.make CMakeFiles/part4.dir/build
-.PHONY : part4/fast
+part6/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part6.dir\build.make CMakeFiles/part6.dir/build
+.PHONY : part6/fast
 
-part4.obj: part4.cpp.obj
-.PHONY : part4.obj
+part6.obj: part6.cpp.obj
+.PHONY : part6.obj
 
 # target to build an object file
-part4.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\part4.dir\build.make CMakeFiles/part4.dir/part4.cpp.obj
-.PHONY : part4.cpp.obj
+part6.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part6.dir\build.make CMakeFiles/part6.dir/part6.cpp.obj
+.PHONY : part6.cpp.obj
 
-part4.i: part4.cpp.i
-.PHONY : part4.i
+part6.i: part6.cpp.i
+.PHONY : part6.i
 
 # target to preprocess a source file
-part4.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\part4.dir\build.make CMakeFiles/part4.dir/part4.cpp.i
-.PHONY : part4.cpp.i
+part6.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part6.dir\build.make CMakeFiles/part6.dir/part6.cpp.i
+.PHONY : part6.cpp.i
 
-part4.s: part4.cpp.s
-.PHONY : part4.s
+part6.s: part6.cpp.s
+.PHONY : part6.s
 
 # target to generate assembly for a file
-part4.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\part4.dir\build.make CMakeFiles/part4.dir/part4.cpp.s
-.PHONY : part4.cpp.s
+part6.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part6.dir\build.make CMakeFiles/part6.dir/part6.cpp.s
+.PHONY : part6.cpp.s
 
 # Help Target
 help:
@@ -160,10 +160,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... part4
-	@echo ... part4.obj
-	@echo ... part4.i
-	@echo ... part4.s
+	@echo ... part6
+	@echo ... part6.obj
+	@echo ... part6.i
+	@echo ... part6.s
 .PHONY : help
 
 
