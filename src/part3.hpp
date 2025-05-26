@@ -93,4 +93,8 @@ public:
         Matrix<T> z2 = Matrix<T>::add(Matrix<T>::multiply(a1, weight2), bias2);
         return softmax(z2.data[0]);
     }
+    const Matrix<T>& getWeight1() const { return weight1; }
+    const Matrix<T>& getBias1()   const { return bias1; }
+    const Matrix<T>& getWeight2() const { return weight2; }
+    const Matrix<T>& getBias2()   const { return bias2; }
 };

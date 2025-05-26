@@ -1,7 +1,7 @@
 [
 {
   "directory": "C:/Users/czx/Desktop/GKD-Software-2025-Test/build",
-  "command": "C:\\PROGRA~1\\VSCODE~1\\MinGW\\bin\\G__~1.EXE  @CMakeFiles/part6.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\part6.dir\\part6.cpp.obj -c C:\\Users\\czx\\Desktop\\GKD-Software-2025-Test\\src\\part6.cpp",
-  "file": "C:/Users/czx/Desktop/GKD-Software-2025-Test/src/part6.cpp"
+  "command": "C:\\PROGRA~1\\VSCODE~1\\MinGW\\bin\\G__~1.EXE  @CMakeFiles/part6-2.dir/includes_CXX.rsp -g -std=gnu++17 -o CMakeFiles\\part6-2.dir\\part6-2.cpp.obj -c C:\\Users\\czx\\Desktop\\GKD-Software-2025-Test\\src\\part6-2.cpp",
+  "file": "C:/Users/czx/Desktop/GKD-Software-2025-Test/src/part6-2.cpp"
 }
 ]

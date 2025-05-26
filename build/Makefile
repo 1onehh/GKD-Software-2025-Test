@@ -116,41 +116,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named part6
+# Target rules for targets named part6-2
 
 # Build rule for target.
-part6: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 part6
-.PHONY : part6
+part6-2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 part6-2
+.PHONY : part6-2
 
 # fast build rule for target.
-part6/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\part6.dir\build.make CMakeFiles/part6.dir/build
-.PHONY : part6/fast
+part6-2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part6-2.dir\build.make CMakeFiles/part6-2.dir/build
+.PHONY : part6-2/fast
 
-part6.obj: part6.cpp.obj
-.PHONY : part6.obj
+part6-2.obj: part6-2.cpp.obj
+.PHONY : part6-2.obj
 
 # target to build an object file
-part6.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\part6.dir\build.make CMakeFiles/part6.dir/part6.cpp.obj
-.PHONY : part6.cpp.obj
+part6-2.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part6-2.dir\build.make CMakeFiles/part6-2.dir/part6-2.cpp.obj
+.PHONY : part6-2.cpp.obj
 
-part6.i: part6.cpp.i
-.PHONY : part6.i
+part6-2.i: part6-2.cpp.i
+.PHONY : part6-2.i
 
 # target to preprocess a source file
-part6.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\part6.dir\build.make CMakeFiles/part6.dir/part6.cpp.i
-.PHONY : part6.cpp.i
+part6-2.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part6-2.dir\build.make CMakeFiles/part6-2.dir/part6-2.cpp.i
+.PHONY : part6-2.cpp.i
 
-part6.s: part6.cpp.s
-.PHONY : part6.s
+part6-2.s: part6-2.cpp.s
+.PHONY : part6-2.s
 
 # target to generate assembly for a file
-part6.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\part6.dir\build.make CMakeFiles/part6.dir/part6.cpp.s
-.PHONY : part6.cpp.s
+part6-2.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\part6-2.dir\build.make CMakeFiles/part6-2.dir/part6-2.cpp.s
+.PHONY : part6-2.cpp.s
 
 # Help Target
 help:
@@ -160,10 +160,10 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... part6
-	@echo ... part6.obj
-	@echo ... part6.i
-	@echo ... part6.s
+	@echo ... part6-2
+	@echo ... part6-2.obj
+	@echo ... part6-2.i
+	@echo ... part6-2.s
 .PHONY : help
 
 

@@ -361,4 +361,39 @@ CMakeFiles/part6.dir/part6.cpp.obj: \
  C:/Users/czx/Desktop/GKD-Software-2025-Test/src/OpenCV-4.9.0-MinGW64-main/include/opencv2/stitching/detail/camera.hpp \
  C:/Users/czx/Desktop/GKD-Software-2025-Test/src/OpenCV-4.9.0-MinGW64-main/include/opencv2/video.hpp \
  C:/Users/czx/Desktop/GKD-Software-2025-Test/src/OpenCV-4.9.0-MinGW64-main/include/opencv2/video/tracking.hpp \
- C:/Users/czx/Desktop/GKD-Software-2025-Test/src/OpenCV-4.9.0-MinGW64-main/include/opencv2/video/background_segm.hpp
+ C:/Users/czx/Desktop/GKD-Software-2025-Test/src/OpenCV-4.9.0-MinGW64-main/include/opencv2/video/background_segm.hpp \
+ C:\Users\czx\Desktop\GKD-Software-2025-Test\src\part2moban.cpp \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/fstream \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/x86_64-w64-mingw32/bits/basic_file.h \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++io.h \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/bits/fstream.tcc \
+ C:\Users\czx\Desktop\GKD-Software-2025-Test\src\part3.hpp \
+ C:\Users\czx\Desktop\GKD-Software-2025-Test\src\json.hpp \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/iterator \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/bits/stream_iterator.h \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/forward_list \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/bits/forward_list.h \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/bits/forward_list.tcc \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/valarray \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/bits/valarray_array.h \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/bits/valarray_array.tcc \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/bits/valarray_before.h \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/bits/slice_array.h \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/bits/valarray_after.h \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/bits/gslice.h \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/bits/gslice_array.h \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/bits/mask_array.h \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/bits/indirect_array.h \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/version \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/cassert \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/filesystem \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/bits/fs_fwd.h \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/bits/fs_path.h \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/codecvt \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/bits/fs_dir.h \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/bits/fs_ops.h \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/optional \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/numeric \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/bits/stl_numeric.h \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/pstl/glue_numeric_defs.h \
+ C:/Program\ Files/vscodecpp/MinGW/include/c++/13.2.0/any

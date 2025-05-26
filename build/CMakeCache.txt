@@ -112,7 +112,7 @@ CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/czx/Desktop/GKD-Software-2025-T
 CMAKE_GNUtoMS:BOOL=OFF
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/test
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/part6_project
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Program Files/vscodecpp/MinGW/bin/ld.exe
@@ -239,13 +239,13 @@ CMAKE_STRIP:FILEPATH=C:/Program Files/vscodecpp/MinGW/bin/strip.exe
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Value Computed by CMake
-DigitRecognition_BINARY_DIR:STATIC=C:/Users/czx/Desktop/GKD-Software-2025-Test/build
+DrawDigitPredictor_BINARY_DIR:STATIC=C:/Users/czx/Desktop/GKD-Software-2025-Test/build
 
 //Value Computed by CMake
-DigitRecognition_IS_TOP_LEVEL:STATIC=ON
+DrawDigitPredictor_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-DigitRecognition_SOURCE_DIR:STATIC=C:/Users/czx/Desktop/GKD-Software-2025-Test/src
+DrawDigitPredictor_SOURCE_DIR:STATIC=C:/Users/czx/Desktop/GKD-Software-2025-Test/src
 
 //The directory containing a CMake configuration file for OpenCV.
 OpenCV_DIR:PATH=OpenCV_DIR-NOTFOUND
@@ -258,15 +258,6 @@ part6_project_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 part6_project_SOURCE_DIR:STATIC=C:/Users/czx/Desktop/GKD-Software-2025-Test/src
-
-//Value Computed by CMake
-test_BINARY_DIR:STATIC=C:/Users/czx/Desktop/GKD-Software-2025-Test/build
-
-//Value Computed by CMake
-test_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-test_SOURCE_DIR:STATIC=C:/Users/czx/Desktop/GKD-Software-2025-Test/src
 
 
 ########################
