@@ -1,1 +1,1 @@
-  -L"C:/Users/czx/Desktop/GKD-Software-2025-Test/src/OpenCV-4.9.0-MinGW64-main/x64/mingw/bin"  -lopencv_world490 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+  -L"C:/Users/czx/Desktop/GKD-Software-2025-Test/opencv/build/install/x64/mingw/lib"  -lopencv_core4120 -lopencv_imgproc4120 -lopencv_highgui4120 -lopencv_imgcodecs4120 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 

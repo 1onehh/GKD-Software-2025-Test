@@ -3,15 +3,21 @@ project(part6_project)
 
 set(CMAKE_CXX_STANDARD 17)
 
-# 头文件目录
-include_directories(C:/Users/czx/Desktop/GKD-Software-2025-Test/src/OpenCV-4.9.0-MinGW64-main/include)
+# OpenCV 安装路径根目录
+set(OpenCV_DIR "C:/Users/czx/Desktop/GKD-Software-2025-Test/opencv/build/install")
 
-# 库文件目录
-link_directories(C:/Users/czx/Desktop/GKD-Software-2025-Test/src/OpenCV-4.9.0-MinGW64-main/x64/mingw/bin)
+# 添加头文件路径
+include_directories(${OpenCV_DIR}/include)
 
-add_executable(part6-2 part6-2.cpp)
+# 添加库文件目录
+link_directories(${OpenCV_DIR}/x64/mingw/lib)
 
-# OpenCV 库
-target_link_libraries(part6-2
-    opencv_world490.dll
+add_executable(part6 part6.cpp)
+
+# 链接所有需要的 OpenCV 库
+target_link_libraries(part6
+    opencv_core4120
+    opencv_imgproc4120
+    opencv_highgui4120
+    opencv_imgcodecs4120
 )

@@ -11,15 +11,15 @@
 using namespace cv;
 using namespace std;
 
-const int CANVAS_SIZE = 280;  // 10倍28x28，方便手绘
-const int RESIZE_SIZE = 28;
+const int CANVAS_SIZE = 600;    // 画布大小，方便手绘
+const int INPUT_SIZE = 28;      // 模型输入尺寸28x28
 
 Mat canvas(CANVAS_SIZE, CANVAS_SIZE, CV_8UC1, Scalar(255));  // 白底
 mutex canvas_mutex;
 
 atomic<bool> running(true);
 
-Model<double> model = loadModel<double>("C:/Users/czx/Desktop/GKD-Software-2025-Test/mnist-fc-plus");
+ Model<double> model = loadModel<double>("C:/Users/czx/Desktop/GKD-Software-2025-Test/mnist-fc-plus"); // 模型对象
 
 vector<double> current_probs(10, 0.0);
 int current_pred = -1;
@@ -51,23 +51,22 @@ void predict_loop() {
             canvas.copyTo(img);
         }
 
-        // 处理图像：转成28x28，白底黑字
+        // 缩放到28x28
         Mat gray;
-        resize(img, gray, Size(RESIZE_SIZE, RESIZE_SIZE));
+        resize(img, gray, Size(INPUT_SIZE, INPUT_SIZE));
 
-        // 白底黑字（当前是黑字白底，不用反色）  
-        // 但是题目说要白底黑字且数字是0~1的浮点数
-        // 先转换成浮点，归一化0~1，数字为黑（0），背景白（1），需要反色：
+        // 转成浮点型，归一化0~1，数字为黑(0)，背景白(1)
         Mat float_img;
-        gray.convertTo(float_img, CV_64F, 1.0/255.0);
-        // 反色，使数字为白（1），背景为0，符合你要求
+        gray.convertTo(float_img, CV_64F, 1.0 / 255.0);
+
+        // 反色，使数字为白(1)，背景黑(0)
         float_img = 1.0 - float_img;
 
-        // 构造模型输入 vector<vector<double>>
-        vector<vector<double>> data(1, vector<double>(RESIZE_SIZE*RESIZE_SIZE));
-        for (int i = 0; i < RESIZE_SIZE; ++i) {
-            for (int j = 0; j < RESIZE_SIZE; ++j) {
-                data[0][i * RESIZE_SIZE + j] = float_img.at<double>(i, j);
+        // 输入数据拍扁为1x784向量
+        vector<vector<double>> data(1, vector<double>(INPUT_SIZE * INPUT_SIZE));
+        for (int i = 0; i < INPUT_SIZE; ++i) {
+            for (int j = 0; j < INPUT_SIZE; ++j) {
+                data[0][i * INPUT_SIZE + j] = float_img.at<double>(i, j);
             }
         }
 
@@ -75,6 +74,8 @@ void predict_loop() {
         vector<double> output = model.forward(input);
 
         if (!output.empty()) {
+            // 用互斥锁保护共享数据
+            lock_guard<mutex> lock(canvas_mutex);
             current_probs = output;
             current_pred = max_element(output.begin(), output.end()) - output.begin();
         }
@@ -113,18 +114,21 @@ int main() {
     thread pred_thread(predict_loop);
 
     while (true) {
-        Mat display(CANVAS_SIZE, CANVAS_SIZE + 300, CV_8UC3, Scalar(255,255,255));
+        Mat display(CANVAS_SIZE, CANVAS_SIZE + 300, CV_8UC3, Scalar(255, 255, 255));
         {
             lock_guard<mutex> lock(canvas_mutex);
             cvtColor(canvas, display(Rect(0, 0, CANVAS_SIZE, CANVAS_SIZE)), COLOR_GRAY2BGR);
         }
 
         // 绘制预测结果
-        if (current_pred >= 0) {
-            string pred_text = "Predicted: " + to_string(current_pred);
-            putText(display, pred_text, Point(CANVAS_SIZE + 20, 220),
-                    FONT_HERSHEY_SIMPLEX, 1.0, Scalar(0,0,0), 2);
-            draw_prob_bar(display);
+        {
+            lock_guard<mutex> lock(canvas_mutex);
+            if (current_pred >= 0) {
+                string pred_text = "Predicted: " + to_string(current_pred);
+                putText(display, pred_text, Point(CANVAS_SIZE + 20, 220),
+                        FONT_HERSHEY_SIMPLEX, 1.0, Scalar(0, 0, 0), 2);
+                draw_prob_bar(display);
+            }
         }
 
         imshow("Draw Digits", display);

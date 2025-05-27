@@ -3,8 +3,8 @@
     {
       "name": "Win32",
       "includePath": [
-        "${workspaceFolder}/**",
-        "${workspaceFolder}/src/opencv/build/include"
+        "C:/Users/czx/Desktop/GKD-Software-2025-Test/opencv/build/install/include",
+        "C:/Users/czx/Desktop/GKD-Software-2025-Test/opencv/build/install/include/opencv2"
       ],
       "defines": [],
       "compilerPath": "C:/Program Files/vscodecpp/MinGW/bin/g++.exe",  

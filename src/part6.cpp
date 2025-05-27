@@ -21,12 +21,12 @@ int main() {
         cerr << "Failed to load image: " << filename << endl;
         continue;
         } else {
-        cout << "Loaded image: " << filename << endl;
+        cout << "Loaded image: " <<endl;
              }
 
 
         resize(img, img, Size(28, 28));
-        img.convertTo(img, CV_64F); // 转为 double 类型
+        img.convertTo(img, CV_64F); 
 
         // 拍扁成 1x784 矩阵并归一化
         vector<vector<double>> data(1, vector<double>(784));
@@ -41,15 +41,16 @@ int main() {
 
         // 输出结果
         int pred = max_element(output.begin(), output.end()) - output.begin();
-        cout << i << ", Predicted: " << pred << ", Prob: ";
+        cout << i << ", Predicted: " << pred << ", Probability: ";
         for (double v : output) cout << v << " ";
         cout << endl;
 
         if (pred != i) {
-            cout << "Warning: Prediction mismatch for " << i << ". Check model or input!" << endl;
+            cout << "Predicate wrong " << i << ". Check again" << endl;
         }
     }
 
+    system("pause");
 
     return 0;
 }

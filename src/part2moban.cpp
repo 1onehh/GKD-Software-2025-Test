@@ -44,19 +44,3 @@ Model<T> loadModel(const string& path) {
 
     return Model<T>(weight1, bias1, weight2, bias2);
 }
-// int main() {
-//     try {
-//         auto model = loadModel<float>("C:/Users/czx/Desktop/GKD-Software-2025-Test/mnist-fc-plus"); // 假设模型保存在 model 文件夹中
-
-//         cout << "Weight1 X:"<< model.getWeight1().rows << endl;
-       
-
-//         cout << "Weight1 Y:"<< model.getBias1().cols << endl;
-
-//     } catch (const exception& e) {
-//         cerr << "Error: " << e.what() << endl;
-//     }
-
-//     return 0;
-// }
-
